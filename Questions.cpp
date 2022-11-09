@@ -102,7 +102,25 @@ using namespace std;
 
 // int main()
 // {
-//     cout << sizeof(a) << endl;
+//     cout << sizeof(a) << endl; // 输出22
+
+//     return 0;
+// }
+// ------------------------------------------------------------------
+// 32位系统
+// #include <iostream>
+
+// using namespace std;
+
+// struct{
+//     char y;
+//     int x;
+//     int a;
+// }s;
+
+// int main()
+// {
+//     cout << sizeof(s) << endl; // 输出12
 
 //     return 0;
 // }
@@ -111,6 +129,7 @@ using namespace std;
 // 以下程序存在什么问题？ 
 // 数组下标越界
 // 死循环
+
 // #define MAX 255 
 // int main()
 // {
