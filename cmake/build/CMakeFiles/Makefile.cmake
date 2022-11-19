@@ -12,6 +12,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.24.0-rc4/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.24.0-rc4/CMakeRCCompiler.cmake"
   "CMakeFiles/3.24.0-rc4/CMakeSystem.cmake"
+  "D:/Development/C++/train_vscode/cmake/src/CMakeLists.txt"
   "D:/InstallationPath/CMake/share/cmake-3.24/Modules/CMakeCCompiler.cmake.in"
   "D:/InstallationPath/CMake/share/cmake-3.24/Modules/CMakeCCompilerABI.c"
   "D:/InstallationPath/CMake/share/cmake-3.24/Modules/CMakeCInformation.cmake"
@@ -127,9 +128,10 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.24.0-rc4/CMakeCCompiler.cmake"
   "CMakeFiles/3.24.0-rc4/CMakeCXXCompiler.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "bin/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/HelloWorld.dir/DependInfo.cmake"
+  "bin/CMakeFiles/HelloWorld.dir/DependInfo.cmake"
   )

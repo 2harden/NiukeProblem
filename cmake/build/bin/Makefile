@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:/Development/C++/train_vscode/cmake/build/CMakeFiles D:/Development/C++/train_vscode/cmake/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd D:/Development/C++/train_vscode/cmake/build && $(CMAKE_COMMAND) -E cmake_progress_start D:/Development/C++/train_vscode/cmake/build/CMakeFiles D:/Development/C++/train_vscode/cmake/build/bin//CMakeFiles/progress.marks
+	cd D:/Development/C++/train_vscode/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:/Development/C++/train_vscode/cmake/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd D:/Development/C++/train_vscode/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,31 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd D:/Development/C++/train_vscode/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd D:/Development/C++/train_vscode/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd D:/Development/C++/train_vscode/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named HelloWorld
+# Convenience name for target.
+bin/CMakeFiles/HelloWorld.dir/rule:
+	cd D:/Development/C++/train_vscode/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/CMakeFiles/HelloWorld.dir/rule
+.PHONY : bin/CMakeFiles/HelloWorld.dir/rule
 
-# Build rule for target.
-HelloWorld: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HelloWorld
+# Convenience name for target.
+HelloWorld: bin/CMakeFiles/HelloWorld.dir/rule
 .PHONY : HelloWorld
 
 # fast build rule for target.
 HelloWorld/fast:
-	$(MAKE) $(MAKESILENT) -f bin/CMakeFiles/HelloWorld.dir/build.make bin/CMakeFiles/HelloWorld.dir/build
+	cd D:/Development/C++/train_vscode/cmake/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/HelloWorld.dir/build.make bin/CMakeFiles/HelloWorld.dir/build
 .PHONY : HelloWorld/fast
+
+HelloWorld.obj: HelloWorld.cpp.obj
+.PHONY : HelloWorld.obj
+
+# target to build an object file
+HelloWorld.cpp.obj:
+	cd D:/Development/C++/train_vscode/cmake/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/HelloWorld.dir/build.make bin/CMakeFiles/HelloWorld.dir/HelloWorld.cpp.obj
+.PHONY : HelloWorld.cpp.obj
+
+HelloWorld.i: HelloWorld.cpp.i
+.PHONY : HelloWorld.i
+
+# target to preprocess a source file
+HelloWorld.cpp.i:
+	cd D:/Development/C++/train_vscode/cmake/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/HelloWorld.dir/build.make bin/CMakeFiles/HelloWorld.dir/HelloWorld.cpp.i
+.PHONY : HelloWorld.cpp.i
+
+HelloWorld.s: HelloWorld.cpp.s
+.PHONY : HelloWorld.s
+
+# target to generate assembly for a file
+HelloWorld.cpp.s:
+	cd D:/Development/C++/train_vscode/cmake/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/HelloWorld.dir/build.make bin/CMakeFiles/HelloWorld.dir/HelloWorld.cpp.s
+.PHONY : HelloWorld.cpp.s
 
 # Help Target
 help:
@@ -138,6 +163,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... HelloWorld"
+	@echo "... HelloWorld.obj"
+	@echo "... HelloWorld.i"
+	@echo "... HelloWorld.s"
 .PHONY : help
 
 
@@ -149,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd D:/Development/C++/train_vscode/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

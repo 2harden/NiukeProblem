@@ -63,42 +63,57 @@ CMAKE_BINARY_DIR = D:/Development/C++/train_vscode/cmake/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/HelloWorld.dir/all
+all: bin/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: bin/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/HelloWorld.dir/clean
+clean: bin/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/HelloWorld.dir
+# Directory level rules for directory bin
+
+# Recursive "all" directory target.
+bin/all: bin/CMakeFiles/HelloWorld.dir/all
+.PHONY : bin/all
+
+# Recursive "preinstall" directory target.
+bin/preinstall:
+.PHONY : bin/preinstall
+
+# Recursive "clean" directory target.
+bin/clean: bin/CMakeFiles/HelloWorld.dir/clean
+.PHONY : bin/clean
+
+#=============================================================================
+# Target rules for target bin/CMakeFiles/HelloWorld.dir
 
 # All Build rule for target.
-CMakeFiles/HelloWorld.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/build
+bin/CMakeFiles/HelloWorld.dir/all:
+	$(MAKE) $(MAKESILENT) -f bin/CMakeFiles/HelloWorld.dir/build.make bin/CMakeFiles/HelloWorld.dir/depend
+	$(MAKE) $(MAKESILENT) -f bin/CMakeFiles/HelloWorld.dir/build.make bin/CMakeFiles/HelloWorld.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:/Development/C++/train_vscode/cmake/build/CMakeFiles --progress-num=1,2 "Built target HelloWorld"
-.PHONY : CMakeFiles/HelloWorld.dir/all
+.PHONY : bin/CMakeFiles/HelloWorld.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/HelloWorld.dir/rule: cmake_check_build_system
+bin/CMakeFiles/HelloWorld.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:/Development/C++/train_vscode/cmake/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/HelloWorld.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/CMakeFiles/HelloWorld.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:/Development/C++/train_vscode/cmake/build/CMakeFiles 0
-.PHONY : CMakeFiles/HelloWorld.dir/rule
+.PHONY : bin/CMakeFiles/HelloWorld.dir/rule
 
 # Convenience name for target.
-HelloWorld: CMakeFiles/HelloWorld.dir/rule
+HelloWorld: bin/CMakeFiles/HelloWorld.dir/rule
 .PHONY : HelloWorld
 
 # clean rule for target.
-CMakeFiles/HelloWorld.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/clean
-.PHONY : CMakeFiles/HelloWorld.dir/clean
+bin/CMakeFiles/HelloWorld.dir/clean:
+	$(MAKE) $(MAKESILENT) -f bin/CMakeFiles/HelloWorld.dir/build.make bin/CMakeFiles/HelloWorld.dir/clean
+.PHONY : bin/CMakeFiles/HelloWorld.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

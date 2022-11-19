@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/Development/C++/train_vscode/cmake/HelloWorld.cpp" "CMakeFiles/HelloWorld.dir/HelloWorld.cpp.obj" "gcc" "CMakeFiles/HelloWorld.dir/HelloWorld.cpp.obj.d"
+  "D:/Development/C++/train_vscode/cmake/src/HelloWorld.cpp" "bin/CMakeFiles/HelloWorld.dir/HelloWorld.cpp.obj" "gcc" "bin/CMakeFiles/HelloWorld.dir/HelloWorld.cpp.obj.d"
   )
 
 # Targets to which this target links.
