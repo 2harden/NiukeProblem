@@ -194,7 +194,7 @@ $(document).ready(function){
 * 接着一个方括号，里面放上图片的挨踢文字
 * 接着一个普通括号，里面放上图片的地址，最后还可以用引号包住并加上选择性的"title"属性的文字
 
-![runoob 图标](https://static.runoob.com/images/runoob-logo.png)
+![runoob 图标](https://static.runoob.com/images/runoob-logo.png)  
 ![runoob 图标](https://static.runoob.com/images/runoob-logo.png "runoob")
 
 ##### 14.2 也可以像网址那样对图片使用变量
@@ -255,8 +255,8 @@ Markdown Preview Enhanced 使用 KaTeX 或者 MathJax 来渲染数学表达式�
 KaTeX 拥有比 MathJax 更快的性能，但是它却少了很多 MathJax 拥有的特性。你可以查看 KaTeX supported functions/symbols 来了解 KaTeX 支持那些符号和函数。
 
 默认下的分隔符：
-\$...\$ 或者 \\(...\) 中的数学表达式将会在行内显示。
-\$$...\$$ 或者 \\[...\] 或者 ```math 中的数学表达式将会在块内显示。
+$...$ 或者 \(...\) 中的数学表达式将会在行内显示。
+$$...$$ 或者 \[...\] 或者 ```math 中的数学表达式将会在块内显示。
 
 $$
 \begin{Bmatrix}
