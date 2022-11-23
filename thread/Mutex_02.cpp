@@ -26,10 +26,10 @@ void A::ListPush()
 {
     for (int i = 0; i < 100; i++)
     {
-        // lock_guard<mutex> lg(mut);
-        mut.lock();
+        lock_guard<mutex> lg(mut);
+        // mut.lock();
         li.push_back(i);
-        mut.unlock();
+        // mut.unlock();
     }
     cout << "ListPush() has been called,thread id is: " << this_thread::get_id() << endl;
 
@@ -38,17 +38,17 @@ void A::ListPush()
 
 bool A::ListPopMsgProc(int &command)
 {
-    // lock_guard<mutex> lg(mut);
-    mut.lock();
+    lock_guard<mutex> lg(mut);
+    // mut.lock();
     if (!li.empty())
     {
         int command = li.front(); // 返回第一个元素，但不检查元素是否存在
         li.pop_front(); // 移除第一个元素，但不返回
-        mut.unlock();
+        // mut.unlock();
 
         return true;
     }
-    mut.unlock();
+    // mut.unlock();
 
     return false;
 }
