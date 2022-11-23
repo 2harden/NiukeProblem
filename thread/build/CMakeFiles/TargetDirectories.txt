@@ -1,0 +1,3 @@
+D:/Development/C++/train_vscode/thread/build/CMakeFiles/Thread.dir
+D:/Development/C++/train_vscode/thread/build/CMakeFiles/edit_cache.dir
+D:/Development/C++/train_vscode/thread/build/CMakeFiles/rebuild_cache.dir
