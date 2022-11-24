@@ -4,4 +4,4 @@ cmake_minimum_required(VERSION 3.10)
 project(Thread)
 
 # add the executable
-add_executable(Thread Mutex_02.cpp)
+add_executable(Thread Mutex_03.cpp)
